@@ -1,6 +1,8 @@
 CREATE Database Library;
 USE Library;
 
+/* Creacion de las tablas de la base de datos */
+
 CREATE TABLE IF NOT EXISTS Rol (
 IDRol INT NOT NULL,
 NombreRol VARCHAR(45) NOT NULL,
@@ -109,6 +111,8 @@ Usuario_IDUsuario INT NOT NULL,
   
 );
 
+/* Inserciones de prueba */
+
 insert into Rol (IDRol,NombreRol) values
 				        (1,"Alumno"),
                 (2,"Profesor"),
@@ -168,6 +172,8 @@ insert into Prestamo (FechaEntrega, FechaDevolucion, Unidad_IDUnidad, Usuario_ID
                     ("21-09-28",'21-10-09', '2', '2'),
                     ("21-09-27",'21-10-08', '3', '3');
 
+
+/* Muestra de valores y modificaciones a las inserciones */
 
 /*Devolucion*/
 DELETE FROM Prestamo where Unidad_IDUnidad = 1;
